@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
     flex: 1,
     width: "100%",
     alignItems: "center",
-    marginTop: 90,
+    marginTop: 75,
   },
   resultadoMensagem: {
     fontSize: 20,
@@ -13,6 +13,16 @@ const styles = StyleSheet.create({
   },
   resultadoImc: {
     fontSize: 40,
+    fontWeight: "bold",
+  },
+  buttonCompartilhar: {
+    backgroundColor: "#1877f2",
+    padding: 12,
+    borderRadius: 50,
+    marginTop: 10,
+  },
+  buttonText: {
+    color: "#fff",
     fontWeight: "bold",
   },
 });

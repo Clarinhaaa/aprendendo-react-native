@@ -9,12 +9,12 @@ const styles = StyleSheet.create({
     alignItems: "center",
     borderTopLeftRadius: 35,
     borderTopRightRadius: 35,
-    marginTop: 40,
+    marginTop: 30,
   },
   form: {
     width: "100%",
     height: "auto",
-    marginTop: 40,
+    marginTop: 45,
     padding: 10,
   },
   formLabel: {
@@ -27,10 +27,16 @@ const styles = StyleSheet.create({
     backgroundColor: "#f4f4f4",
     height: 50,
     borderRadius: 50,
-    marginBottom: 20,
     paddingLeft: 15,
     alignSelf: "center",
     fontSize: 16,
+    marginBottom: 30,
+  },
+  mensagemErro: {
+    fontSize: 12,
+    color: "red",
+    paddingLeft: 25,
+    marginBottom: 10,
   },
   button: {
     backgroundColor: "#ff0043",
@@ -39,8 +45,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     width: "90%",
-    paddingTop: 12,
-    paddingBottom: 12,
+    paddingVertical: 12,
   },
   buttonText: {
     color: "#fff",
