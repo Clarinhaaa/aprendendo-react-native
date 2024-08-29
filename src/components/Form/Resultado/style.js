@@ -5,14 +5,13 @@ const styles = StyleSheet.create({
     flex: 1,
     width: "100%",
     alignItems: "center",
-    marginTop: 75,
   },
   resultadoMensagem: {
-    fontSize: 20,
+    fontSize: 24,
     fontWeight: "bold",
   },
   resultadoImc: {
-    fontSize: 40,
+    fontSize: 46,
     fontWeight: "bold",
   },
   buttonCompartilhar: {

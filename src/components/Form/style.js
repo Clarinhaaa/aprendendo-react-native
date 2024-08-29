@@ -2,9 +2,7 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   formContainer: {
-    width: "100%",
-    height: "100%",
-    bottom: 0,
+    flex: 1,
     backgroundColor: "#fff",
     alignItems: "center",
     borderTopLeftRadius: 35,
@@ -14,11 +12,13 @@ const styles = StyleSheet.create({
   form: {
     width: "100%",
     height: "auto",
-    marginTop: 45,
-    padding: 10,
+    marginTop: 5,
+    paddingVertical: 45,
+    paddingHorizontal: 5,
   },
   formLabel: {
     fontSize: 18,
+    fontWeight: "bold",
     marginBottom: 10,
     paddingLeft: 25,
   },
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     paddingLeft: 25,
     marginBottom: 10,
   },
-  button: {
+  buttonSubmit: {
     backgroundColor: "#ff0043",
     borderRadius: 50,
     alignSelf: "center",
@@ -50,6 +50,21 @@ const styles = StyleSheet.create({
   buttonText: {
     color: "#fff",
     fontSize: 18,
+  },
+  listaImcTitulo: {
+    color: "#ff0043",
+    fontWeight: "bold",
+    fontSize: 24,
+  },
+  listaImc: {
+    height: '20%',
+  },
+  listaImcItem: {
+    width: "100%",
+    color: "#ff0043",
+    fontSize: 18,
+    marginTop: 20,
+    paddingRight: 10,
   },
 });
 

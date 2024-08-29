@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, Share } from "react-native";
 import styles from "./style";
 
 export default function Resultado(props) {
-  const share = async () => {
+  const compartilhar = async () => {
     await Share.share({
       message: "Meu IMC agora é: " + props.imc,
     });
@@ -11,15 +11,14 @@ export default function Resultado(props) {
 
   return (
     <View style={styles.resultadoContainer}>
-      <Text style={styles.resultadoMensagem}>{props.mensagemImc}</Text>
+      <Text style={styles.resultadoMensagem}>Seu IMC é:</Text>
       <Text style={styles.resultadoImc}>{props.imc}</Text>
-      {props.imc != null ? (
-        <TouchableOpacity style={styles.buttonCompartilhar} onPress={share}>
-          <Text style={styles.buttonText}>Compartilhar</Text>
-        </TouchableOpacity>
-      ) : (
-        <View />
-      )}
+      <TouchableOpacity
+        style={styles.buttonCompartilhar}
+        onPress={compartilhar}
+      >
+        <Text style={styles.buttonText}>Compartilhar</Text>
+      </TouchableOpacity>
     </View>
   );
 }
